@@ -40,6 +40,27 @@ Current contributors seeking projects or collaborators, new contributors explori
    uv pip install -r pyproject.toml
    ```
 
+
+#### Alternative: Using Standard Python venv + pip (Optional)
+
+If you prefer to use standard Python tools without `uv`, you can install the project using `venv` and `pip`:
+
+1. Create and activate a virtual environment using Python:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Unix or macOS
+# OR
+.venv\Scripts\activate  # On Windows
+```
+
+2. Install the project in editable mode:
+
+```bash
+pip install -e .
+```
+
+Both installation methods work side-by-side, so you can choose whichever is more convenient for your development setup.
 ### Running the Project
 
 #### Using Quarto (Recommended)
