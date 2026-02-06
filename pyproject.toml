@@ -1,7 +1,7 @@
 [project]
 name = "connecting-osp"
 version = "0.1.0"
-description = "Add your description here"
+description = "A centralized platform with a searchable database and news feed to improve the discoverability of the open source ecosystem."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -9,3 +9,13 @@ dependencies = [
     "pandas>=2.2.3",
     "quarto-cli>=1.6.42",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[tool.setuptools.package-data]
+"*" = ["*.csv", "*.json", "*.yml", "*.yaml"]
